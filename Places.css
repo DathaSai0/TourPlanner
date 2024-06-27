@@ -1,0 +1,61 @@
+.Places-card {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  gap: 50px;
+  justify-content: center;
+}
+.tourist-places-container {
+  margin-top: 50px;
+  padding: 50px 100px;
+}
+.tourist-places-container h1 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.travel-name {
+  font-size: large;
+  font-weight: bold;
+}
+.nav-item .nav-link {
+  font-size: large;
+  margin-right: 20px;
+  font-weight: bold;
+}
+#back-ground-color {
+  background-color: #fff !important;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+}
+.container-fluid img {
+  mix-blend-mode: multiply;
+}
+#profile {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+#book-btn {
+  position: fixed;
+  bottom: 50px;
+  right: 100px;
+}
+@media (max-width: 1024px) {
+  .Places-card {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 768px) {
+  .Places-card {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 426px) {
+  .Places-card {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

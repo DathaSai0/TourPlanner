@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login and Registration Page</title>
+    <link rel="stylesheet" href="login.css" />
+  </head>
+  <body>
+    <div class="login-container" id="login-container">
+      <h1>Login</h1>
+      <form action="/login" method="post">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" />
+
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" />
+
+        <a class="login-anchor"
+          ><button type="submit" id="login-btn">Login</button></a
+        >
+      </form>
+      <p>
+        Not registered?
+        <a id="registerTag">Register here</a>
+      </p>
+    </div>
+
+    <div class="register-container" id="register-container">
+      <h1>Register</h1>
+      <form action="/register" method="post">
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" />
+        <p class="error" id="nameErr">
+          Name should contain atleast 3 characters.
+        </p>
+        <label for="email">Email</label>
+        <input type="email" id="register-email" name="email" />
+        <p class="error" id="emailErr">Please enter the valid email ID.</p>
+        <label for="password">Password</label>
+        <input type="password" id="register-password" name="password" />
+        <p class="error" id="passwordErr">
+          Password should contain atleast one character,number and alphabet.
+        </p>
+        <label for="Re-password">Re-enter the password</label>
+        <input type="password" id="re-register-password" name="Re-password" />
+        <p class="error" id="RepasswordErr">
+          Password should be as same as the above.
+        </p>
+
+        <button type="submit" id="register-btn">Register</button>
+      </form>
+      <p>Already registered? <a id="loginTag">Login here</a></p>
+    </div>
+    <script src="login.js"></script>
+  </body>
+</html>

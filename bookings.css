@@ -1,0 +1,169 @@
+/* General Styling */
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 20px;
+  color: #333;
+}
+#Bookings-details-container {
+  padding-top: 100px;
+}
+#Bookings-details-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+#back-ground-color {
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.navbar .nav-link {
+  font-size: large;
+  margin-right: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+#back-ground-color {
+  background-color: #fff !important;
+}
+
+.container-fluid img {
+  mix-blend-mode: multiply;
+}
+
+#profile {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+.Booking-dtails {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  justify-items: center;
+  margin-top: 80px;
+}
+
+.card {
+  background-color: #fff;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: left;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.date {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-radius: 10px 0 0 10px;
+}
+
+.date time {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.date time .day {
+  font-size: 3em;
+}
+
+.date time .month {
+  font-size: 1.5em;
+}
+
+.date time .year {
+  font-size: 1em;
+}
+
+.card-cont {
+  padding: 20px;
+  border-radius: 0 10px 10px 0;
+  flex: 1;
+}
+
+.card-cont small {
+  display: block;
+  font-size: 0.8em;
+  color: #999;
+}
+
+.card-cont h3 {
+  margin: 10px 0;
+  color: #555;
+}
+
+.even-date {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.even-date i,
+.even-info i {
+  margin-right: 10px;
+  color: #999;
+}
+
+.card button {
+  background-color: #d9534f;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 15px;
+}
+
+.card button:hover {
+  background-color: #c9302c;
+}
+
+@media (max-width: 1024px) {
+  .Booking-dtails {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .Booking-dtails {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .date {
+    border-radius: 10px 10px 0 0;
+  }
+
+  .card-cont {
+    border-radius: 0 0 10px 10px;
+  }
+}

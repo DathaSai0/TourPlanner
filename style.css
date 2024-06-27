@@ -1,0 +1,288 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.travel-name {
+  font-size: large;
+  font-weight: bold;
+}
+.nav-item .nav-link {
+  font-size: large;
+  margin-right: 20px;
+  font-weight: bold;
+}
+#back-ground-color {
+  background-color: #fff !important;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+}
+.container-fluid img {
+  mix-blend-mode: multiply;
+}
+.Banner-section-container {
+  background-image: url("./Assets/banner-backGround-img.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Banner-section-data {
+  width: 35%;
+  text-align: center;
+  background-color: #ffffffc2;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.21);
+  padding: 20px;
+  border-radius: 20px;
+}
+.Banner-section-data button {
+  background-color: black;
+  color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+}
+.Services-card {
+  width: 20%;
+  background-color: #fff;
+  text-align: center;
+  padding: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.21);
+  border-radius: 50px;
+  cursor: pointer;
+}
+.Services-card:hover {
+  transform: scale(1.05);
+}
+.Services-card img {
+  mix-blend-mode: multiply;
+}
+.Services-card-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.Services-container {
+  padding: 70px 50px;
+}
+.Services-container h1 {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+.gallery-img-div {
+  width: 250px;
+  height: 400px;
+  cursor: pointer;
+}
+.gallery-img-div:hover {
+  transform: scale(1.05);
+}
+.gallery-img-div img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+.gallery-img-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 50px;
+}
+.gallery-container h1 {
+  text-align: center;
+}
+.tour-offering-countries {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+  align-items: center;
+  justify-items: center;
+}
+#tour-offering-container h1 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+#tour-offering-container {
+  padding: 100px 0;
+}
+.card-body .button {
+  background-color: black;
+  color: #fff;
+  border-radius: 10px;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 10px;
+}
+.card {
+  height: 520px !important;
+  cursor: pointer;
+}
+.card:hover {
+  transform: scale(1.05);
+}
+.card-text {
+  height: 220px;
+}
+#profile {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+#Reviews {
+  padding-top: 70px;
+}
+#Reviews h1 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.reviewscard {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.img-div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.img-div img {
+  width: 50px;
+  border-radius: 50%;
+}
+.profilecard {
+  width: 300px;
+  padding: 20px;
+  box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.stars {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.stars i {
+  color: gold;
+}
+
+#contact {
+  padding: 100px;
+}
+#contact h1 {
+  margin-bottom: 50px;
+  text-align: center;
+}
+.container form {
+  max-width: 1000px;
+  margin: 20px auto;
+  text-align: center;
+}
+.container form .input-box {
+  display: flex;
+  justify-content: space-between;
+}
+.container form .input-box input,
+.container form textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+.container form .input-box input {
+  width: 100%;
+  margin-right: 10px;
+}
+#contact .btn {
+  background-color: black;
+  color: #fff;
+  padding: 10px;
+}
+footer {
+  background-color: #efe7e795;
+  text-align: center;
+  height: 50px;
+}
+.top-arrow {
+  border: 1px solid #fff;
+  border-radius: 50%;
+  box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  position: fixed;
+  bottom: 100px;
+  right: 100px;
+}
+.top-arrow a i {
+  padding: 15px;
+  color: black;
+  font-size: 25px;
+}
+footer p {
+  line-height: 50px;
+}
+@media (max-width: 1024px) {
+  .gallery-img-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+  }
+  .Services-card {
+    height: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .tour-offering-countries {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .gallery-img-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+  }
+  .Services-card-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .Services-card {
+    width: 100%;
+  }
+  .Banner-section-data {
+    width: 70%;
+  }
+  .reviewscard {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-items: center;
+  }
+}
+@media (max-width: 426px) {
+  .reviewscard {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    justify-items: center;
+  }
+  .Services-card-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .gallery-img-container {
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+  }
+  .tour-offering-countries {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .container form .input-box {
+    display: flex;
+    flex-direction: column;
+  }
+}

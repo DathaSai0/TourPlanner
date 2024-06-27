@@ -1,0 +1,93 @@
+.gallery-card {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 50px;
+  padding: 0 100px;
+  justify-content: center;
+}
+.gallery-card .card {
+  /* height: 450px !important; */
+  cursor: pointer;
+}
+.travel-name {
+  font-size: large;
+  font-weight: bold;
+}
+.nav-item .nav-link {
+  font-size: large;
+  margin-right: 20px;
+  font-weight: bold;
+}
+#back-ground-color {
+  background-color: #fff !important;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+}
+.container-fluid img {
+  mix-blend-mode: multiply;
+}
+.gallery-card .card:hover {
+  transform: scale(1.05);
+}
+.card .card-img-top {
+  height: 150px;
+}
+.card-text {
+  height: 50%;
+}
+.gallery-container h1 {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+.button {
+  background-color: black;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px;
+  text-decoration: none;
+  cursor: pointer;
+}
+.Book-div {
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+.Book-div button {
+  background-color: black;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+}
+.gallery-container {
+  margin-top: 100px;
+}
+#profile {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+#book-btn {
+  position: fixed;
+  bottom: 50px;
+  right: 100px;
+}
+@media (max-width: 1024px) {
+  .gallery-card {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 768px) {
+  .gallery-card {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 426px) {
+  .gallery-card {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
